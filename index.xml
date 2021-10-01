@@ -27,7 +27,8 @@ We tried different methods. We worked on transfer learning, on image preprocessi
       
       <guid>https://maximene.github.io/AboutMe.github.io/post/jpeg_decoder/</guid>
       <description>This project is about building a functional JPEG to PPM decoder. We worked together with two teammates to build this using the C language. This program can process multiple JPEG images in baseline sequential mode (non progressive).
-Because I am not the only one owner of this code, I will not publish it. However, you can contact me to access the code.</description>
+Because I am not the only one owner of this code, I will not publish it. However, you can contact me to access the code.
+JPEG format compress images using mathematical methods that are described on the official JPEG documentation.</description>
     </item>
     
   </channel>
