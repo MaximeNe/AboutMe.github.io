@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Maxime NEMO - Portfolio</title>
-    <link>https://maximene.github.io/AboutMe.github.io/</link>
-    <description>Recent content on Maxime NEMO - Portfolio</description>
+    <title>Python on Maxime NEMO - Portfolio</title>
+    <link>https://maximene.github.io/AboutMe.github.io/tags/python/</link>
+    <description>Recent content in Python on Maxime NEMO - Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Aug 2021 21:01:41 +0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Info</title>
-      <link>https://maximene.github.io/AboutMe.github.io/info/</link>
-      <pubDate>Sat, 02 Oct 2021 12:07:26 +0200</pubDate>
-      
-      <guid>https://maximene.github.io/AboutMe.github.io/info/</guid>
-      <description>test</description>
-    </item>
-    
-    <item>
-      <title>Optique NEMO website</title>
-      <link>https://maximene.github.io/AboutMe.github.io/posts/optiquenemo/</link>
-      <pubDate>Mon, 09 Aug 2021 21:01:41 +0200</pubDate>
-      
-      <guid>https://maximene.github.io/AboutMe.github.io/posts/optiquenemo/</guid>
-      <description>[Work in progress] Link : XXXXXXX I am building this website using WordPress and JavaScript. The project was not only building the website, but also to host it and I will be maintaining it. I am also responsible for Optique NEMO&amp;rsquo;s social media.</description>
-    </item>
-    
+    <lastBuildDate>Fri, 06 Aug 2021 11:05:23 +0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Challenge DATA &amp; AI by Ens&#39;IA and Neovision</title>
       <link>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</link>
@@ -36,17 +18,6 @@ The goal is quite simple : building the best model to recognize the characters i
 The results: My team managed to end in second position with a macro-averaged accuracy of 0.78.
 The model: My model is available in my github (french version). https://github.com/MaximeNe/Challenge-DATA-IA
 We tried different methods. We worked on transfer learning, on image preprocessing, on segmentation, etc&amp;hellip; The best result used transfer learning with ImageNet</description>
-    </item>
-    
-    <item>
-      <title>Jpeg decoder</title>
-      <link>https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/</link>
-      <pubDate>Tue, 01 Jun 2021 10:29:41 +0200</pubDate>
-      
-      <guid>https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/</guid>
-      <description>The project This project is about building a functional JPEG to PPM decoder. We worked together with two teammates to build this using the C language. This program can process multiple JPEG images in baseline sequential mode (non progressive).
-Because I am not the only one owner of this code, I will not publish it. However, you can contact me to access the code.
-How it works JPEG format compress images using mathematical methods and algorithms that are described on the official JPEG documentation.</description>
     </item>
     
     <item>
