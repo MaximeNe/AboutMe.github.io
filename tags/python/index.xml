@@ -31,5 +31,16 @@ A connex component is a sub-graph where all the vertices are linked by transitiv
 A solution I worked in pair with ELHAJ-LAHSEN Hugo on different methods. We studied quadtrees, M-trees, VP-trees, Divide-and-conquer algorithm, optimization &amp;hellip;</description>
     </item>
     
+    <item>
+      <title>Optique NEMO website</title>
+      <link>https://maximene.github.io/AboutMe.github.io/posts/todolist/</link>
+      <pubDate>Thu, 01 Oct 2020 21:01:41 +0200</pubDate>
+      
+      <guid>https://maximene.github.io/AboutMe.github.io/posts/todolist/</guid>
+      <description>The project I always wanted to have a todolist on my desktop (I use Gnome). I made few research for widget on the internet, did not find what I was looking for, so I decided to make my own.
+I wanted something that does not consume too much power, that is easy to use (as fast as possible to add something in a terminal) and free.
+What I built I have chosen to create a todolist that actually changes the background of my computer, so that the consumption of my todolist is down to 0 when I am not changing anything.</description>
+    </item>
+    
   </channel>
 </rss>
