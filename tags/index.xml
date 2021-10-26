@@ -2,89 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Maxime NEMO - Portfolio</title>
-    <link>/tags/</link>
+    <link>https://maximene.github.io/AboutMe.github.io/tags/</link>
     <description>Recent content in Tags on Maxime NEMO - Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Aug 2021 21:01:41 +0200</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Aug 2021 21:01:41 +0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JS</title>
-      <link>/tags/js/</link>
+      <link>https://maximene.github.io/AboutMe.github.io/tags/js/</link>
       <pubDate>Mon, 09 Aug 2021 21:01:41 +0200</pubDate>
       
-      <guid>/tags/js/</guid>
+      <guid>https://maximene.github.io/AboutMe.github.io/tags/js/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Website</title>
-      <link>/tags/website/</link>
+      <link>https://maximene.github.io/AboutMe.github.io/tags/website/</link>
       <pubDate>Mon, 09 Aug 2021 21:01:41 +0200</pubDate>
       
-      <guid>/tags/website/</guid>
+      <guid>https://maximene.github.io/AboutMe.github.io/tags/website/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WordPress</title>
-      <link>/tags/wordpress/</link>
+      <link>https://maximene.github.io/AboutMe.github.io/tags/wordpress/</link>
       <pubDate>Mon, 09 Aug 2021 21:01:41 +0200</pubDate>
       
-      <guid>/tags/wordpress/</guid>
+      <guid>https://maximene.github.io/AboutMe.github.io/tags/wordpress/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AI</title>
-      <link>/tags/ai/</link>
+      <link>https://maximene.github.io/AboutMe.github.io/tags/ai/</link>
       <pubDate>Fri, 06 Aug 2021 11:05:23 +0200</pubDate>
       
-      <guid>/tags/ai/</guid>
+      <guid>https://maximene.github.io/AboutMe.github.io/tags/ai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>/tags/python/</link>
+      <link>https://maximene.github.io/AboutMe.github.io/tags/python/</link>
       <pubDate>Fri, 06 Aug 2021 11:05:23 +0200</pubDate>
       
-      <guid>/tags/python/</guid>
+      <guid>https://maximene.github.io/AboutMe.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TensorFlow</title>
-      <link>/tags/tensorflow/</link>
+      <link>https://maximene.github.io/AboutMe.github.io/tags/tensorflow/</link>
       <pubDate>Fri, 06 Aug 2021 11:05:23 +0200</pubDate>
       
-      <guid>/tags/tensorflow/</guid>
+      <guid>https://maximene.github.io/AboutMe.github.io/tags/tensorflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C</title>
-      <link>/tags/c/</link>
+      <link>https://maximene.github.io/AboutMe.github.io/tags/c/</link>
       <pubDate>Tue, 01 Jun 2021 10:29:41 +0200</pubDate>
       
-      <guid>/tags/c/</guid>
+      <guid>https://maximene.github.io/AboutMe.github.io/tags/c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Algorithm</title>
-      <link>/tags/algorithm/</link>
+      <link>https://maximene.github.io/AboutMe.github.io/tags/algorithm/</link>
       <pubDate>Tue, 13 Apr 2021 23:02:18 +0200</pubDate>
       
-      <guid>/tags/algorithm/</guid>
+      <guid>https://maximene.github.io/AboutMe.github.io/tags/algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shell</title>
-      <link>/tags/shell/</link>
+      <link>https://maximene.github.io/AboutMe.github.io/tags/shell/</link>
       <pubDate>Thu, 01 Oct 2020 21:01:41 +0200</pubDate>
       
-      <guid>/tags/shell/</guid>
+      <guid>https://maximene.github.io/AboutMe.github.io/tags/shell/</guid>
       <description></description>
     </item>
     

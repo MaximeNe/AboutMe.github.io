@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Algorithm on Maxime NEMO - Portfolio</title>
-    <link>/tags/algorithm/</link>
+    <link>https://maximene.github.io/AboutMe.github.io/tags/algorithm/</link>
     <description>Recent content in Algorithm on Maxime NEMO - Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Apr 2021 23:02:18 +0200</lastBuildDate><atom:link href="/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Apr 2021 23:02:18 +0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Size of Connex Components in unoriented 2D graph</title>
-      <link>/posts/connex_components/</link>
+      <link>https://maximene.github.io/AboutMe.github.io/posts/connex_components/</link>
       <pubDate>Tue, 13 Apr 2021 23:02:18 +0200</pubDate>
       
-      <guid>/posts/connex_components/</guid>
+      <guid>https://maximene.github.io/AboutMe.github.io/posts/connex_components/</guid>
       <description>The project Considering a set of points p_i, 1&amp;lt;i&amp;lt;n, and a limit distance s, we want to know the number a connex component. Two vertices p_i and p_j are linked by an edge if d(p_i, p_j) &amp;lt;= s.
 A connex component is a sub-graph where all the vertices are linked by transitivity.
 A solution I worked in pair with ELHAJ-LAHSEN Hugo on different methods. We studied quadtrees, M-trees, VP-trees, Divide-and-conquer algorithm, optimization &amp;hellip;</description>

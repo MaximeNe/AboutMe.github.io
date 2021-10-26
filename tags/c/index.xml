@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>C on Maxime NEMO - Portfolio</title>
-    <link>/tags/c/</link>
+    <link>https://maximene.github.io/AboutMe.github.io/tags/c/</link>
     <description>Recent content in C on Maxime NEMO - Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jun 2021 10:29:41 +0200</lastBuildDate><atom:link href="/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 10:29:41 +0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jpeg decoder</title>
-      <link>/posts/jpeg_decoder/</link>
+      <link>https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/</link>
       <pubDate>Tue, 01 Jun 2021 10:29:41 +0200</pubDate>
       
-      <guid>/posts/jpeg_decoder/</guid>
+      <guid>https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/</guid>
       <description>The project This project is about building a functional JPEG to PPM decoder. We worked together with two teammates to build this using the C language. This program can process multiple JPEG images in baseline sequential mode (non progressive).
 Because I am not the only one owner of this code, I will not publish it. However, you can contact me to access the code.
 How it works JPEG format compress images using mathematical methods and algorithms that are described on the official JPEG documentation.</description>
