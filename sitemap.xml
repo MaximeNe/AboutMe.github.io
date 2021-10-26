@@ -2,60 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://maximene.github.io/AboutMe.github.io/info/</loc>
-    <lastmod>2021-10-02T12:07:26+02:00</lastmod>
-  </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/tags/js/</loc>
+    <loc>/tags/js/</loc>
     <lastmod>2021-08-09T21:01:41+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2021-08-09T21:01:41+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/posts/optiquenemo/</loc>
+    <loc>/posts/optiquenemo/</loc>
     <lastmod>2021-08-09T21:01:41+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2021-08-09T21:01:41+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2021-08-09T21:01:41+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/tags/website/</loc>
+    <loc>/tags/website/</loc>
     <lastmod>2021-08-09T21:01:41+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/tags/wordpress/</loc>
+    <loc>/tags/wordpress/</loc>
     <lastmod>2021-08-09T21:01:41+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/tags/ai/</loc>
+    <loc>/tags/ai/</loc>
     <lastmod>2021-08-06T11:05:23+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</loc>
+    <loc>/posts/challenge_data_ia/</loc>
     <lastmod>2021-08-06T11:05:23+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/tags/python/</loc>
+    <loc>/tags/python/</loc>
     <lastmod>2021-08-06T11:05:23+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/tags/tensorflow/</loc>
+    <loc>/tags/tensorflow/</loc>
     <lastmod>2021-08-06T11:05:23+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/tags/c/</loc>
+    <loc>/tags/c/</loc>
     <lastmod>2021-06-01T10:29:41+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/</loc>
+    <loc>/posts/jpeg_decoder/</loc>
     <lastmod>2021-06-01T10:29:41+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/tags/algorithm/</loc>
+    <loc>/tags/algorithm/</loc>
     <lastmod>2021-04-13T23:02:18+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/posts/connex_components/</loc>
+    <loc>/posts/connex_components/</loc>
     <lastmod>2021-04-13T23:02:18+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/tags/shell/</loc>
+    <loc>/tags/shell/</loc>
     <lastmod>2020-10-01T21:01:41+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/posts/todolist/</loc>
+    <loc>/posts/todolist/</loc>
     <lastmod>2020-10-01T21:01:41+02:00</lastmod>
   </url><url>
-    <loc>https://maximene.github.io/AboutMe.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url>
 </urlset>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Python on Maxime NEMO - Portfolio</title>
-    <link>https://maximene.github.io/AboutMe.github.io/tags/python/</link>
+    <link>/tags/python/</link>
     <description>Recent content in Python on Maxime NEMO - Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Aug 2021 11:05:23 +0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Aug 2021 11:05:23 +0200</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Challenge DATA &amp; AI by Ens&#39;IA and Neovision</title>
-      <link>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</link>
+      <link>/posts/challenge_data_ia/</link>
       <pubDate>Fri, 06 Aug 2021 11:05:23 +0200</pubDate>
       
-      <guid>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</guid>
+      <guid>/posts/challenge_data_ia/</guid>
       <description>The challenge: This challenge is about the well known subject of Optical Character Recognition (OCR).
 The goal is quite simple : building the best model to recognize the characters in the dataset given by Neovision. (private dataset)
 The results: My team managed to end in second position with a macro-averaged accuracy of 0.78.
@@ -22,10 +22,10 @@ We tried different methods. We worked on transfer learning, on image preprocessi
     
     <item>
       <title>Size of Connex Components in unoriented 2D graph</title>
-      <link>https://maximene.github.io/AboutMe.github.io/posts/connex_components/</link>
+      <link>/posts/connex_components/</link>
       <pubDate>Tue, 13 Apr 2021 23:02:18 +0200</pubDate>
       
-      <guid>https://maximene.github.io/AboutMe.github.io/posts/connex_components/</guid>
+      <guid>/posts/connex_components/</guid>
       <description>The project Considering a set of points p_i, 1&amp;lt;i&amp;lt;n, and a limit distance s, we want to know the number a connex component. Two vertices p_i and p_j are linked by an edge if d(p_i, p_j) &amp;lt;= s.
 A connex component is a sub-graph where all the vertices are linked by transitivity.
 A solution I worked in pair with ELHAJ-LAHSEN Hugo on different methods. We studied quadtrees, M-trees, VP-trees, Divide-and-conquer algorithm, optimization &amp;hellip;</description>
@@ -33,10 +33,10 @@ A solution I worked in pair with ELHAJ-LAHSEN Hugo on different methods. We stud
     
     <item>
       <title>TodoList implementation</title>
-      <link>https://maximene.github.io/AboutMe.github.io/posts/todolist/</link>
+      <link>/posts/todolist/</link>
       <pubDate>Thu, 01 Oct 2020 21:01:41 +0200</pubDate>
       
-      <guid>https://maximene.github.io/AboutMe.github.io/posts/todolist/</guid>
+      <guid>/posts/todolist/</guid>
       <description>The project I always wanted to have a todolist on my desktop (I use Gnome). I made few research for widget on the internet, did not find what I was looking for, so I decided to make my own.
 I wanted something that does not consume too much power, that is easy to use (as fast as possible to add something in a terminal) and free.
 What I built I have chosen to create a todolist that actually changes the background of my computer, so that the consumption of my todolist is down to 0 when I am not changing anything.</description>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>AI on Maxime NEMO - Portfolio</title>
-    <link>https://maximene.github.io/AboutMe.github.io/tags/ai/</link>
+    <link>/tags/ai/</link>
     <description>Recent content in AI on Maxime NEMO - Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Aug 2021 11:05:23 +0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Aug 2021 11:05:23 +0200</lastBuildDate><atom:link href="/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Challenge DATA &amp; AI by Ens&#39;IA and Neovision</title>
-      <link>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</link>
+      <link>/posts/challenge_data_ia/</link>
       <pubDate>Fri, 06 Aug 2021 11:05:23 +0200</pubDate>
       
-      <guid>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</guid>
+      <guid>/posts/challenge_data_ia/</guid>
       <description>The challenge: This challenge is about the well known subject of Optical Character Recognition (OCR).
 The goal is quite simple : building the best model to recognize the characters in the dataset given by Neovision. (private dataset)
 The results: My team managed to end in second position with a macro-averaged accuracy of 0.78.
