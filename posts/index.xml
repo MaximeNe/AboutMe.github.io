@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Maxime NEMO - Portfolio</title>
     <link>https://maximene.github.io/AboutMe.github.io/posts/</link>
     <description>Recent content in Posts on Maxime NEMO - Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Aug 2021 21:01:41 +0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Nov 2021 17:40:42 +0100</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Virtual Drag and Drop using hand</title>
+      <link>https://maximene.github.io/AboutMe.github.io/posts/virtualdraganddrop/</link>
+      <pubDate>Wed, 03 Nov 2021 17:40:42 +0100</pubDate>
+      
+      <guid>https://maximene.github.io/AboutMe.github.io/posts/virtualdraganddrop/</guid>
+      <description>VirtualDragAndDrop This programs create a virtual drag and drop on objects represented by their centers. I used rectangle for this example.
+To use the program, just run the file main.py. Then to move an object, you have to &amp;ldquo;grab it&amp;rdquo; = close your hand when your hand is on the object. Then opening your hand will release the object.
+I used Python with OpenCV and cvzone to detect the hand. A next step would be to recreate the hand detection by myself.</description>
+    </item>
+    
     <item>
       <title>Optique NEMO website</title>
       <link>https://maximene.github.io/AboutMe.github.io/posts/optiquenemo/</link>
