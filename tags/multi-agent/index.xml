@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>multi-agent on Maxime NEMO - Portfolio</title>
+    <link>https://maximene.github.io/AboutMe.github.io/tags/multi-agent/</link>
+    <description>Recent content in multi-agent on Maxime NEMO - Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Nov 2021 21:01:41 +0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/tags/multi-agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simulator projects</title>
+      <link>https://maximene.github.io/AboutMe.github.io/posts/simulators/</link>
+      <pubDate>Sun, 28 Nov 2021 21:01:41 +0200</pubDate>
+      
+      <guid>https://maximene.github.io/AboutMe.github.io/posts/simulators/</guid>
+      <description>The project With two teamates, we implemented 4 different multi-agent simulators using only java.
+Every simulator we implemented are using an event manager to handle the execution of the next step of the simulation.
+Balls simulator Cellular simulators Conway&amp;rsquo;s game of life. Immigration game Schelling model Boids simulator The code The major part of our code is available here. The code is only missing a dependency that I am not allowed to share.</description>
+    </item>
+    
+  </channel>
+</rss>
