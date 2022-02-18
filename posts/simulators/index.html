@@ -1,331 +1,221 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Simulator projects | Maxime NEMO - Portfolio</title>
-<meta name="keywords" content="java, multi-agent" />
-<meta name="description" content="The project With two teamates, we implemented 4 different multi-agent simulators using only java.
-Every simulator we implemented is using an event manager to handle the execution of the next step of the simulation.
-Balls simulator Cellular simulators Conway&rsquo;s game of life. Immigration game Schelling model Boids simulator The code The major part of our code is available here. The code is only missing a dependency that I am not allowed to share.">
-<meta name="author" content="Maxime NEMO">
-<link rel="canonical" href="https://maximene.github.io/AboutMe.github.io/posts/simulators/" />
-<link crossorigin="anonymous" href="/AboutMe.github.io/assets/css/stylesheet.min.6f60056d44d3f7eb69a4bc6c332b59960f3a995802bded244750232f33713c49.css" integrity="sha256-b2AFbUTT9&#43;tppLxsMytZlg86mVgCve0kR1AjLzNxPEk=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/AboutMe.github.io/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
-    onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://maximene.github.io/AboutMe.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://maximene.github.io/AboutMe.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://maximene.github.io/AboutMe.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://maximene.github.io/AboutMe.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://maximene.github.io/AboutMe.github.io/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.89.3" />
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9VDF0V8Z3T"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-9VDF0V8Z3T', { 'anonymize_ip': false });
-}
-</script>
-
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-9VDF0V8Z3T', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<meta property="og:title" content="Simulator projects" />
-<meta property="og:description" content="The project With two teamates, we implemented 4 different multi-agent simulators using only java.
-Every simulator we implemented is using an event manager to handle the execution of the next step of the simulation.
-Balls simulator Cellular simulators Conway&rsquo;s game of life. Immigration game Schelling model Boids simulator The code The major part of our code is available here. The code is only missing a dependency that I am not allowed to share." />
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Simulator projects - Maxime Nemo Portfolio</title><meta name="Description" content="This article describes various multi agent projects"><meta property="og:title" content="Simulator projects" />
+<meta property="og:description" content="This article describes various multi agent projects" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://maximene.github.io/AboutMe.github.io/posts/simulators/" />
-<meta property="og:image" content="https://maximene.github.io/AboutMe.github.io/img/boids.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-11-28T21:01:41&#43;02:00" />
-<meta property="article:modified_time" content="2021-11-28T21:01:41&#43;02:00" />
+<meta property="og:url" content="https://maximene.github.io/AboutMe.github.io/posts/simulators/" /><meta property="og:image" content="https://maximene.github.io/AboutMe.github.io/posts/simulators/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-28T21:01:41+02:00" />
+<meta property="article:modified_time" content="2021-11-28T21:01:41+02:00" />
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://maximene.github.io/AboutMe.github.io/img/boids.png" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://maximene.github.io/AboutMe.github.io/posts/simulators/featured-image.png"/>
 <meta name="twitter:title" content="Simulator projects"/>
-<meta name="twitter:description" content="The project With two teamates, we implemented 4 different multi-agent simulators using only java.
-Every simulator we implemented is using an event manager to handle the execution of the next step of the simulation.
-Balls simulator Cellular simulators Conway&rsquo;s game of life. Immigration game Schelling model Boids simulator The code The major part of our code is available here. The code is only missing a dependency that I am not allowed to share."/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+<meta name="twitter:description" content="This article describes various multi agent projects"/>
+<meta name="application-name" content="Maxime Nemo Portfolio">
+<meta name="apple-mobile-web-app-title" content="Maxime Nemo Portfolio"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://maximene.github.io/AboutMe.github.io/posts/simulators/" /><link rel="prev" href="https://maximene.github.io/AboutMe.github.io/posts/aod/" /><link rel="next" href="https://maximene.github.io/AboutMe.github.io/posts/ensia/" /><link rel="stylesheet" href="/AboutMe.github.io/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/AboutMe.github.io/css/style.min.css"><link rel="stylesheet" href="/AboutMe.github.io/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/AboutMe.github.io/lib/animate/animate.min.css"><script type="application/ld+json">
     {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://maximene.github.io/AboutMe.github.io/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Simulator projects",
-      "item": "https://maximene.github.io/AboutMe.github.io/posts/simulators/"
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Simulator projects",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/maximene.github.io\/AboutMe.github.io\/posts\/simulators\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/maximene.github.io\/AboutMe.github.io\/posts\/simulators\/featured-image.png",
+                            "width":  901 ,
+                            "height":  422 
+                        }],"genre": "posts","keywords": "Java, Multi-agent","wordcount":  179 ,
+        "url": "https:\/\/maximene.github.io\/AboutMe.github.io\/posts\/simulators\/","datePublished": "2021-11-28T21:01:41+02:00","dateModified": "2021-11-28T21:01:41+02:00","publisher": {
+            "@type": "Organization",
+            "name": "Maxime"},"author": {
+                "@type": "Person",
+                "name": "Maxime"
+            },"description": "This article describes various multi agent projects"
     }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Simulator projects",
-  "name": "Simulator projects",
-  "description": "The project With two teamates, we implemented 4 different multi-agent simulators using only java.\nEvery simulator we implemented is using an event manager to handle the execution of the next step of the simulation.\nBalls simulator Cellular simulators Conway\u0026rsquo;s game of life. Immigration game Schelling model Boids simulator The code The major part of our code is available here. The code is only missing a dependency that I am not allowed to share.",
-  "keywords": [
-    "java", "multi-agent"
-  ],
-  "articleBody": "The project With two teamates, we implemented 4 different multi-agent simulators using only java.\nEvery simulator we implemented is using an event manager to handle the execution of the next step of the simulation.\nBalls simulator Cellular simulators Conway’s game of life. Immigration game Schelling model Boids simulator The code The major part of our code is available here. The code is only missing a dependency that I am not allowed to share. https://github.com/MaximeNe/Simulators\nA summary of our work is also available on the github page of the project (in french)\n",
-  "wordCount" : "91",
-  "inLanguage": "en",
-  "image":"https://maximene.github.io/AboutMe.github.io/img/boids.png","datePublished": "2021-11-28T21:01:41+02:00",
-  "dateModified": "2021-11-28T21:01:41+02:00",
-  "author":{
-    "@type": "Person",
-    "name": "Maxime NEMO"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://maximene.github.io/AboutMe.github.io/posts/simulators/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Maxime NEMO - Portfolio",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://maximene.github.io/AboutMe.github.io/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://maximene.github.io/AboutMe.github.io/" accesskey="h" title="Maxime NEMO - Portfolio (Alt + H)">Maxime NEMO - Portfolio</a>
-            <span class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </span>
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/AboutMe.github.io/" title="Maxime Nemo Portfolio"><span id="id-1" class="typeit"></span></a>
         </div>
-        <ul id="menu">
-            <li>
-                <a href="https://maximene.github.io/AboutMe.github.io/posts/pdf.pdf" title="My resume">
-                    <span>My resume</span>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/AboutMe.github.io/posts/" title="Discover what I do"> My Work </a><a class="menu-item" href="/AboutMe.github.io/tags/" title="Find content by tags"> Tags </a><a class="menu-item" href="/AboutMe.github.io/resume.pdf" title="Check my resume"> View Resume </a><a class="menu-item" href="/AboutMe.github.io/aboutme" title="Learn more about me"> About Me </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
                 </a>
-            </li>
-            <li>
-                <a href="https://maximene.github.io/AboutMe.github.io/tags/" title="tags">
-                    <span>tags</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/AboutMe.github.io/" title="Maxime Nemo Portfolio"><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/AboutMe.github.io/posts/" title="Discover what I do">My Work</a><a class="menu-item" href="/AboutMe.github.io/tags/" title="Find content by tags">Tags</a><a class="menu-item" href="/AboutMe.github.io/resume.pdf" title="Check my resume">View Resume</a><a class="menu-item" href="/AboutMe.github.io/aboutme" title="Learn more about me">About Me</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
 </header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    
-    <h1 class="post-title">
-      Simulator projects
-    </h1>
-    <div class="post-meta"><span title='2021-11-28 21:01:41 +0200 +0200'>November 28, 2021</span>&nbsp;·&nbsp;Maxime NEMO
-
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
 </div>
-  </header> 
-<figure class="entry-cover"><img loading="lazy" src="https://maximene.github.io/AboutMe.github.io/img/boids.png" alt="">
-        
-</figure>
-  <div class="post-content"><h1 id="the-project">The project<a hidden class="anchor" aria-hidden="true" href="#the-project">#</a></h1>
-<p>With two teamates, we implemented 4 different multi-agent simulators using only java.<br>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Simulator projects</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/AboutMe.github.io/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Maxime</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-28">2021-11-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;179 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/AboutMe.github.io/svg/loading.min.svg"
+        data-src="/AboutMe.github.io/posts/simulators/featured-image.png"
+        data-srcset="/AboutMe.github.io/posts/simulators/featured-image.png, /AboutMe.github.io/posts/simulators/featured-image.png 1.5x, /AboutMe.github.io/posts/simulators/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/AboutMe.github.io/posts/simulators/featured-image.png"
+        title="This article describes various multi agent projects" /></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-project">The project</a>
+      <ul>
+        <li><a href="#balls-simulator">Balls simulator</a></li>
+        <li><a href="#cellular-simulators">Cellular simulators</a></li>
+        <li><a href="#conways-game-of-life">Conway&rsquo;s game of life.</a></li>
+        <li><a href="#boids-simulator">Boids simulator</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-code">The code</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="the-project">The project</h2>
+<p>With two teamates, we implemented 5 different multi-agent simulators using only java.<br>
 Every simulator we implemented is using an event manager to handle the execution of the next step of the simulation.</p>
-<h2 id="balls-simulator">Balls simulator<a hidden class="anchor" aria-hidden="true" href="#balls-simulator">#</a></h2>
-<p><img loading="lazy" src="/AboutMe.github.io/img/balls.gif" alt="ball simulator"  />
-</p>
-<h2 id="cellular-simulators">Cellular simulators<a hidden class="anchor" aria-hidden="true" href="#cellular-simulators">#</a></h2>
-<h3 id="conways-game-of-life">Conway&rsquo;s game of life.<a hidden class="anchor" aria-hidden="true" href="#conways-game-of-life">#</a></h3>
-<p><img loading="lazy" src="/AboutMe.github.io/img/Conway.gif" alt="ball simulator"  />
-</p>
-<h3 id="immigration-game">Immigration game<a hidden class="anchor" aria-hidden="true" href="#immigration-game">#</a></h3>
-<p><img loading="lazy" src="/AboutMe.github.io/img/Immigration.gif" alt="ball simulator"  />
-</p>
-<h3 id="schelling-model">Schelling model<a hidden class="anchor" aria-hidden="true" href="#schelling-model">#</a></h3>
-<p><img loading="lazy" src="/AboutMe.github.io/img/Schelling.gif" alt="ball simulator"  />
-</p>
-<h2 id="boids-simulator">Boids simulator<a hidden class="anchor" aria-hidden="true" href="#boids-simulator">#</a></h2>
-<p><img loading="lazy" src="/AboutMe.github.io/img/boids.gif" alt="ball simulator"  />
-</p>
-<h1 id="the-code">The code<a hidden class="anchor" aria-hidden="true" href="#the-code">#</a></h1>
-<p>The major part of our code is available here. The code is only missing a dependency that I am not allowed to share. <a href="https://github.com/MaximeNe/Simulators">https://github.com/MaximeNe/Simulators</a><br>
+<h3 id="balls-simulator">Balls simulator</h3>
+<p><figure><a class="lightgallery" href="/AboutMe.github.io/posts/simulators/balls.gif" title="ball simulator" data-thumbnail="/AboutMe.github.io/posts/simulators/balls.gif" data-sub-html="<h2>Ball simulator in action</h2><p>ball simulator</p>">
+        <img
+            class="lazyload"
+            src="/AboutMe.github.io/svg/loading.min.svg"
+            data-src="balls.gif"
+            data-srcset="/AboutMe.github.io/posts/simulators/balls.gif, balls.gif 1.5x, /AboutMe.github.io/posts/simulators/balls.gif 2x"
+            data-sizes="auto"
+            alt="/AboutMe.github.io/posts/simulators/balls.gif" />
+    </a><figcaption class="image-caption">Ball simulator in action</figcaption>
+    </figure></p>
+<h3 id="cellular-simulators">Cellular simulators</h3>
+<h3 id="conways-game-of-life">Conway&rsquo;s game of life.</h3>
+<p><figure><a class="lightgallery" href="/AboutMe.github.io/posts/simulators/Conway.gif" title="ball simulator" data-thumbnail="/AboutMe.github.io/posts/simulators/Conway.gif" data-sub-html="<h2>Conway&#39;s game of life in action</h2><p>ball simulator</p>">
+        <img
+            class="lazyload"
+            src="/AboutMe.github.io/svg/loading.min.svg"
+            data-src="Conway.gif"
+            data-srcset="/AboutMe.github.io/posts/simulators/Conway.gif, Conway.gif 1.5x, /AboutMe.github.io/posts/simulators/Conway.gif 2x"
+            data-sizes="auto"
+            alt="/AboutMe.github.io/posts/simulators/Conway.gif" />
+    </a><figcaption class="image-caption">Conway's game of life in action</figcaption>
+    </figure></p>
+<h4 id="immigration-game">Immigration game</h4>
+<p><figure><a class="lightgallery" href="/AboutMe.github.io/posts/simulators/Immigration.gif" title="ball simulator" data-thumbnail="/AboutMe.github.io/posts/simulators/Immigration.gif" data-sub-html="<h2>Immigration game simulator</h2><p>ball simulator</p>">
+        <img
+            class="lazyload"
+            src="/AboutMe.github.io/svg/loading.min.svg"
+            data-src="Immigration.gif"
+            data-srcset="/AboutMe.github.io/posts/simulators/Immigration.gif, Immigration.gif 1.5x, /AboutMe.github.io/posts/simulators/Immigration.gif 2x"
+            data-sizes="auto"
+            alt="/AboutMe.github.io/posts/simulators/Immigration.gif" />
+    </a><figcaption class="image-caption">Immigration game simulator</figcaption>
+    </figure></p>
+<h4 id="schelling-model">Schelling model</h4>
+<p><figure><a class="lightgallery" href="/AboutMe.github.io/posts/simulators/Schelling.gif" title="ball simulator" data-thumbnail="/AboutMe.github.io/posts/simulators/Schelling.gif" data-sub-html="<h2>Schelling model simulator</h2><p>ball simulator</p>">
+        <img
+            class="lazyload"
+            src="/AboutMe.github.io/svg/loading.min.svg"
+            data-src="Schelling.gif"
+            data-srcset="/AboutMe.github.io/posts/simulators/Schelling.gif, Schelling.gif 1.5x, /AboutMe.github.io/posts/simulators/Schelling.gif 2x"
+            data-sizes="auto"
+            alt="/AboutMe.github.io/posts/simulators/Schelling.gif" />
+    </a><figcaption class="image-caption">Schelling model simulator</figcaption>
+    </figure></p>
+<h3 id="boids-simulator">Boids simulator</h3>
+<p><figure><a class="lightgallery" href="/AboutMe.github.io/posts/simulators/boids.gif" title="ball simulator" data-thumbnail="/AboutMe.github.io/posts/simulators/boids.gif" data-sub-html="<h2>Boid simulator</h2><p>ball simulator</p>">
+        <img
+            class="lazyload"
+            src="/AboutMe.github.io/svg/loading.min.svg"
+            data-src="boids.gif"
+            data-srcset="/AboutMe.github.io/posts/simulators/boids.gif, boids.gif 1.5x, /AboutMe.github.io/posts/simulators/boids.gif 2x"
+            data-sizes="auto"
+            alt="/AboutMe.github.io/posts/simulators/boids.gif" />
+    </a><figcaption class="image-caption">Boid simulator</figcaption>
+    </figure></p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>What is a boid simulator?<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Boids is an artificial life program, developed by Craig Reynolds in 1986, which simulates the flocking behaviour of birds. His paper on this topic was published in 1987 in the proceedings of the ACM SIGGRAPH conference. <a href="https://en.wikipedia.org/wiki/Boids" target="_blank" rel="noopener noreffer">Learn more</a></div>
+        </div>
+    </div>
+<h2 id="the-code">The code</h2>
+<p>The major part of our code is available <a href="https://github.com/MaximeNe/Simulators" target="_blank" rel="noopener noreffer">here</a>. The code is only missing a dependency that I am not allowed to share.<br>
 A summary of our work is also available on the github page of the project (in french)</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-11-28</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
 
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/AboutMe.github.io/tags/java/">Java</a>,&nbsp;<a href="/AboutMe.github.io/tags/multi-agent/">Multi-agent</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/AboutMe.github.io/">Home</a></span>
+        </section>
+    </div>
 
-  </div>
+    <div class="post-nav"><a href="/AboutMe.github.io/posts/aod/" class="prev" rel="prev" title="Summury of an algorithmic course I took"><i class="fas fa-angle-left fa-fw"></i>Summury of an algorithmic course I took</a>
+            <a href="/AboutMe.github.io/posts/ensia/" class="next" rel="next" title="Ens&#39;IA association">Ens&#39;IA association<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Maxime NEMO Portfolio, built with <3 and Hugo</div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/AboutMe.github.io/" target="_blank">Maxime NEMO</a></span></div>
+        </div>
+    </footer></div>
 
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="https://maximene.github.io/AboutMe.github.io/tags/java/">java</a></li>
-      <li><a href="https://maximene.github.io/AboutMe.github.io/tags/multi-agent/">multi-agent</a></li>
-    </ul>
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-    <span>&copy; 2021 <a href="https://maximene.github.io/AboutMe.github.io/">Maxime NEMO - Portfolio</a></span>
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/AboutMe.github.io/lib/katex/katex.min.css"><script type="text/javascript" src="/AboutMe.github.io/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/AboutMe.github.io/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/AboutMe.github.io/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/AboutMe.github.io/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/AboutMe.github.io/lib/katex/katex.min.js"></script><script type="text/javascript" src="/AboutMe.github.io/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"Maxime NEMO","id-2":"Maxime NEMO"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script type="text/javascript" src="/AboutMe.github.io/js/theme.min.js"></script></body>
 </html>

@@ -1,24 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>TensorFlow on Maxime NEMO - Portfolio</title>
-    <link>https://maximene.github.io/AboutMe.github.io/tags/tensorflow/</link>
-    <description>Recent content in TensorFlow on Maxime NEMO - Portfolio</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 06 Aug 2021 11:05:23 +0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Challenge DATA &amp; AI by Ens&#39;IA and Neovision</title>
-      <link>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</link>
-      <pubDate>Fri, 06 Aug 2021 11:05:23 +0200</pubDate>
-      
-      <guid>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</guid>
-      <description>The challenge: This challenge is about the well known subject of Optical Character Recognition (OCR).
-The goal is quite simple : building the best model to recognize the characters in the dataset given by Neovision. (private dataset)
-The results: My team managed to end in second position with a macro-averaged accuracy of 0.78.
-The model: My model is available in my github (french version). https://github.com/MaximeNe/Challenge-DATA-IA
-We tried different methods. We worked on transfer learning, on image preprocessing, on segmentation, etc&amp;hellip; The best result used transfer learning with ImageNet</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>TensorFlow - Tag - Maxime Nemo Portfolio</title>
+        <link>https://maximene.github.io/AboutMe.github.io/tags/tensorflow/</link>
+        <description>TensorFlow - Tag - Maxime Nemo Portfolio</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</managingEditor>
+            <webMaster>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</webMaster><lastBuildDate>Fri, 06 Aug 2021 11:05:23 &#43;0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/tags/tensorflow/" rel="self" type="application/rss+xml" /><item>
+    <title>Challenge DATA &amp; AI by Ens&#39;IA and Neovision</title>
+    <link>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</link>
+    <pubDate>Fri, 06 Aug 2021 11:05:23 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</guid>
+    <description><![CDATA[The challenge: This challenge was organized by Ens&rsquo;IA and Neovision in 2021. It lasted a month and a half and was about the well known subject of Optical Character Recognition (OCR).
+What is OCR ?  It&rsquo;s about converting images of typed, handwritten or printed text into machine-encoded text. Learn more   ➡️ The goal was quite simple but still very challenging:
+building the best model to recognize the characters in the dataset given by Neovision.]]></description>
+</item></channel>
 </rss>

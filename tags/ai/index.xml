@@ -1,46 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>AI on Maxime NEMO - Portfolio</title>
-    <link>https://maximene.github.io/AboutMe.github.io/tags/ai/</link>
-    <description>Recent content in AI on Maxime NEMO - Portfolio</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 28 Nov 2021 21:02:41 +0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ens&#39;IA association</title>
-      <link>https://maximene.github.io/AboutMe.github.io/posts/ensia/</link>
-      <pubDate>Sun, 28 Nov 2021 21:02:41 +0200</pubDate>
-      
-      <guid>https://maximene.github.io/AboutMe.github.io/posts/ensia/</guid>
-      <description>What is Ens&amp;rsquo;IA Ens&amp;rsquo;IA is a french AI association aiming to :
- Promote AI and its applications Organize with partners, companies or other student associations, events and activities such as conferences, training workshops, collaborative workshops, professional-student meetings, etc. Organize AI competitions and challenges in France Promoting ethical and responsible AI  You can find the free courses we offer on our github page
-My work at Ens&amp;rsquo;IA  I am taking part in the sessions Ens&amp;rsquo;IA offers : I am one of the two person giving the lecture.</description>
-    </item>
-    
-    <item>
-      <title>Virtual Drag and Drop using hand</title>
-      <link>https://maximene.github.io/AboutMe.github.io/posts/virtualdraganddrop/</link>
-      <pubDate>Wed, 03 Nov 2021 17:40:42 +0100</pubDate>
-      
-      <guid>https://maximene.github.io/AboutMe.github.io/posts/virtualdraganddrop/</guid>
-      <description>VirtualDragAndDrop This programs create a virtual drag and drop on objects represented by their centers. I used rectangle for this example.
-To use the program, just run the file main.py. Then to move an object, you have to &amp;ldquo;grab it&amp;rdquo; = close your hand when your hand is on the object. Then opening your hand will release the object.
-I used Python with OpenCV and cvzone to detect the hand. A next step would be to recreate the hand detection by myself.</description>
-    </item>
-    
-    <item>
-      <title>Challenge DATA &amp; AI by Ens&#39;IA and Neovision</title>
-      <link>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</link>
-      <pubDate>Fri, 06 Aug 2021 11:05:23 +0200</pubDate>
-      
-      <guid>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</guid>
-      <description>The challenge: This challenge is about the well known subject of Optical Character Recognition (OCR).
-The goal is quite simple : building the best model to recognize the characters in the dataset given by Neovision. (private dataset)
-The results: My team managed to end in second position with a macro-averaged accuracy of 0.78.
-The model: My model is available in my github (french version). https://github.com/MaximeNe/Challenge-DATA-IA
-We tried different methods. We worked on transfer learning, on image preprocessing, on segmentation, etc&amp;hellip; The best result used transfer learning with ImageNet</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>AI - Tag - Maxime Nemo Portfolio</title>
+        <link>https://maximene.github.io/AboutMe.github.io/tags/ai/</link>
+        <description>AI - Tag - Maxime Nemo Portfolio</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</managingEditor>
+            <webMaster>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</webMaster><lastBuildDate>Tue, 01 Feb 2022 10:29:41 &#43;0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/tags/ai/" rel="self" type="application/rss+xml" /><item>
+    <title>Challenge Neovision x Ens&#39;IA 2022</title>
+    <link>https://maximene.github.io/AboutMe.github.io/posts/challenge2022/</link>
+    <pubDate>Tue, 01 Feb 2022 10:29:41 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://maximene.github.io/AboutMe.github.io/posts/challenge2022/</guid>
+    <description><![CDATA[What is this challenge about? This is an artificial intelligence challenge organized jointly by Neovision and Ens&rsquo;IA. For the second edition of this challenge, participants had to create an AI, but don&rsquo;t panic: Neovision coaches will were there to accompany them. There were also workshops to give them additional knowledge!
+This challenge were for participants the opportunity to live a real AI project and to deepen their knowledge, but also and above all to have fun and to meet people]]></description>
+</item><item>
+    <title>Ens&#39;IA association</title>
+    <link>https://maximene.github.io/AboutMe.github.io/posts/ensia/</link>
+    <pubDate>Sun, 28 Nov 2021 21:02:41 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://maximene.github.io/AboutMe.github.io/posts/ensia/</guid>
+    <description><![CDATA[What is Ens&rsquo;IA Ens&rsquo;IA is a french AI association aiming to :
+ Promote AI and its applications Organize with partners, companies or other student associations events and activities such as conferences, lectures, training workshops, collaborative workshops, professional-student meetings, etc. Organize AI competitions and challenges in France Promoting ethical and responsible AI  You can find the free courses we offer on our github page
+My work at Ens&rsquo;IA  I am taking part in the sessions Ens&rsquo;IA offers: I am one of the two person giving the lecture.]]></description>
+</item><item>
+    <title>Virtual Drag and Drop using hand</title>
+    <link>https://maximene.github.io/AboutMe.github.io/posts/virtual_drag_and_drop/</link>
+    <pubDate>Wed, 03 Nov 2021 17:40:42 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://maximene.github.io/AboutMe.github.io/posts/virtual_drag_and_drop/</guid>
+    <description><![CDATA[VirtualDragAndDrop I was kind of bored a week end so I wanted to do something that will be absolutely never used again 🙃.
+This little project allowed me to get in touch with OpenCV and image processing.
+The program I built creates a virtual drag and drop on objects represented by their centers. I used rectangle for this example.
+To use the program, just run the file main.py. Then to move an object, you have to &ldquo;grab it&rdquo; = close your hand when your hand is on the object.]]></description>
+</item><item>
+    <title>Challenge DATA &amp; AI by Ens&#39;IA and Neovision</title>
+    <link>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</link>
+    <pubDate>Fri, 06 Aug 2021 11:05:23 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/</guid>
+    <description><![CDATA[The challenge: This challenge was organized by Ens&rsquo;IA and Neovision in 2021. It lasted a month and a half and was about the well known subject of Optical Character Recognition (OCR).
+What is OCR ?  It&rsquo;s about converting images of typed, handwritten or printed text into machine-encoded text. Learn more   ➡️ The goal was quite simple but still very challenging:
+building the best model to recognize the characters in the dataset given by Neovision.]]></description>
+</item></channel>
 </rss>

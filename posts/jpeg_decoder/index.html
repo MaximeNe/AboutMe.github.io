@@ -1,316 +1,188 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Jpeg decoder | Maxime NEMO - Portfolio</title>
-<meta name="keywords" content="C" />
-<meta name="description" content="The project This project is about building a functional JPEG to PPM decoder. We worked together with two teammates to build this using the C language. This program can process multiple JPEG images in baseline sequential mode (non progressive).
-Because I am not the only one owner of this code, I will not publish it. However, you can contact me to access the code.
-How it works JPEG format compress images using mathematical methods and algorithms that are described on the official JPEG documentation.">
-<meta name="author" content="Maxime NEMO">
-<link rel="canonical" href="https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/" />
-<link crossorigin="anonymous" href="/AboutMe.github.io/assets/css/stylesheet.min.6f60056d44d3f7eb69a4bc6c332b59960f3a995802bded244750232f33713c49.css" integrity="sha256-b2AFbUTT9&#43;tppLxsMytZlg86mVgCve0kR1AjLzNxPEk=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/AboutMe.github.io/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
-    onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://maximene.github.io/AboutMe.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://maximene.github.io/AboutMe.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://maximene.github.io/AboutMe.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://maximene.github.io/AboutMe.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://maximene.github.io/AboutMe.github.io/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.89.3" />
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9VDF0V8Z3T"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-9VDF0V8Z3T', { 'anonymize_ip': false });
-}
-</script>
-
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-9VDF0V8Z3T', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<meta property="og:title" content="Jpeg decoder" />
-<meta property="og:description" content="The project This project is about building a functional JPEG to PPM decoder. We worked together with two teammates to build this using the C language. This program can process multiple JPEG images in baseline sequential mode (non progressive).
-Because I am not the only one owner of this code, I will not publish it. However, you can contact me to access the code.
-How it works JPEG format compress images using mathematical methods and algorithms that are described on the official JPEG documentation." />
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Jpeg decoder to PPM - Maxime Nemo Portfolio</title><meta name="Description" content="This article describes how I built a JPEG decoder"><meta property="og:title" content="Jpeg decoder to PPM" />
+<meta property="og:description" content="This article describes how I built a JPEG decoder" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/" />
-<meta property="og:image" content="https://maximene.github.io/AboutMe.github.io/img/jpeg_decoder.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-06-01T10:29:41&#43;02:00" />
-<meta property="article:modified_time" content="2021-06-01T10:29:41&#43;02:00" />
+<meta property="og:url" content="https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/" /><meta property="og:image" content="https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-01T10:29:41+02:00" />
+<meta property="article:modified_time" content="2021-06-01T10:29:41+02:00" />
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://maximene.github.io/AboutMe.github.io/img/jpeg_decoder.png" />
-<meta name="twitter:title" content="Jpeg decoder"/>
-<meta name="twitter:description" content="The project This project is about building a functional JPEG to PPM decoder. We worked together with two teammates to build this using the C language. This program can process multiple JPEG images in baseline sequential mode (non progressive).
-Because I am not the only one owner of this code, I will not publish it. However, you can contact me to access the code.
-How it works JPEG format compress images using mathematical methods and algorithms that are described on the official JPEG documentation."/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/featured-image.png"/>
+<meta name="twitter:title" content="Jpeg decoder to PPM"/>
+<meta name="twitter:description" content="This article describes how I built a JPEG decoder"/>
+<meta name="application-name" content="Maxime Nemo Portfolio">
+<meta name="apple-mobile-web-app-title" content="Maxime Nemo Portfolio"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/" /><link rel="prev" href="https://maximene.github.io/AboutMe.github.io/posts/connex_components/" /><link rel="next" href="https://maximene.github.io/AboutMe.github.io/posts/challenge_data_ia/" /><link rel="stylesheet" href="/AboutMe.github.io/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/AboutMe.github.io/css/style.min.css"><link rel="stylesheet" href="/AboutMe.github.io/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/AboutMe.github.io/lib/animate/animate.min.css"><script type="application/ld+json">
     {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://maximene.github.io/AboutMe.github.io/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Jpeg decoder",
-      "item": "https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/"
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Jpeg decoder to PPM",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/maximene.github.io\/AboutMe.github.io\/posts\/jpeg_decoder\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/maximene.github.io\/AboutMe.github.io\/posts\/jpeg_decoder\/featured-image.png",
+                            "width":  1034 ,
+                            "height":  559 
+                        }],"genre": "posts","keywords": "C, Algorithm","wordcount":  253 ,
+        "url": "https:\/\/maximene.github.io\/AboutMe.github.io\/posts\/jpeg_decoder\/","datePublished": "2021-06-01T10:29:41+02:00","dateModified": "2021-06-01T10:29:41+02:00","publisher": {
+            "@type": "Organization",
+            "name": "Maxime"},"author": {
+                "@type": "Person",
+                "name": "Maxime"
+            },"description": "This article describes how I built a JPEG decoder"
     }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Jpeg decoder",
-  "name": "Jpeg decoder",
-  "description": "The project This project is about building a functional JPEG to PPM decoder. We worked together with two teammates to build this using the C language. This program can process multiple JPEG images in baseline sequential mode (non progressive).\nBecause I am not the only one owner of this code, I will not publish it. However, you can contact me to access the code.\nHow it works JPEG format compress images using mathematical methods and algorithms that are described on the official JPEG documentation.",
-  "keywords": [
-    "C"
-  ],
-  "articleBody": "The project This project is about building a functional JPEG to PPM decoder. We worked together with two teammates to build this using the C language. This program can process multiple JPEG images in baseline sequential mode (non progressive).\nBecause I am not the only one owner of this code, I will not publish it. However, you can contact me to access the code.\nHow it works JPEG format compress images using mathematical methods and algorithms that are described on the official JPEG documentation.\nYou can see down below the process of encoding and decoding.\n",
-  "wordCount" : "95",
-  "inLanguage": "en",
-  "image":"https://maximene.github.io/AboutMe.github.io/img/jpeg_decoder.png","datePublished": "2021-06-01T10:29:41+02:00",
-  "dateModified": "2021-06-01T10:29:41+02:00",
-  "author":{
-    "@type": "Person",
-    "name": "Maxime NEMO"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Maxime NEMO - Portfolio",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://maximene.github.io/AboutMe.github.io/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://maximene.github.io/AboutMe.github.io/" accesskey="h" title="Maxime NEMO - Portfolio (Alt + H)">Maxime NEMO - Portfolio</a>
-            <span class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </span>
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/AboutMe.github.io/" title="Maxime Nemo Portfolio"><span id="id-1" class="typeit"></span></a>
         </div>
-        <ul id="menu">
-            <li>
-                <a href="https://maximene.github.io/AboutMe.github.io/posts/pdf.pdf" title="My resume">
-                    <span>My resume</span>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/AboutMe.github.io/posts/" title="Discover what I do"> My Work </a><a class="menu-item" href="/AboutMe.github.io/tags/" title="Find content by tags"> Tags </a><a class="menu-item" href="/AboutMe.github.io/resume.pdf" title="Check my resume"> View Resume </a><a class="menu-item" href="/AboutMe.github.io/aboutme" title="Learn more about me"> About Me </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
                 </a>
-            </li>
-            <li>
-                <a href="https://maximene.github.io/AboutMe.github.io/tags/" title="tags">
-                    <span>tags</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/AboutMe.github.io/" title="Maxime Nemo Portfolio"><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/AboutMe.github.io/posts/" title="Discover what I do">My Work</a><a class="menu-item" href="/AboutMe.github.io/tags/" title="Find content by tags">Tags</a><a class="menu-item" href="/AboutMe.github.io/resume.pdf" title="Check my resume">View Resume</a><a class="menu-item" href="/AboutMe.github.io/aboutme" title="Learn more about me">About Me</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
 </header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    
-    <h1 class="post-title">
-      Jpeg decoder
-    </h1>
-    <div class="post-meta"><span title='2021-06-01 10:29:41 +0200 CEST'>June 1, 2021</span>&nbsp;·&nbsp;Maxime NEMO
-
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
 </div>
-  </header> 
-<figure class="entry-cover"><img loading="lazy" src="https://maximene.github.io/AboutMe.github.io/img/jpeg_decoder.png" alt="">
-        
-</figure>
-  <div class="post-content"><h3 id="the-project">The project<a hidden class="anchor" aria-hidden="true" href="#the-project">#</a></h3>
-<p>This project is about building a functional JPEG to PPM decoder. We worked together with two teammates to build this using the C language. This program can process multiple JPEG images in baseline sequential mode (non progressive).<br>
-Because I am not the only one owner of this code, I will not publish it. However, you can contact me to access the code.</p>
-<h3 id="how-it-works">How it works<a hidden class="anchor" aria-hidden="true" href="#how-it-works">#</a></h3>
-<p>JPEG format compress images using mathematical methods and algorithms that are described on the official JPEG documentation.<br>
-You can see down below the process of encoding and decoding.</p>
-<p><img loading="lazy" src="/AboutMe.github.io/img/codec.png" alt="Illustration"  />
-</p>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Jpeg decoder to PPM</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/AboutMe.github.io/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Maxime</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-01">2021-06-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;253 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/AboutMe.github.io/svg/loading.min.svg"
+        data-src="/AboutMe.github.io/posts/jpeg_decoder/featured-image.png"
+        data-srcset="/AboutMe.github.io/posts/jpeg_decoder/featured-image.png, /AboutMe.github.io/posts/jpeg_decoder/featured-image.png 1.5x, /AboutMe.github.io/posts/jpeg_decoder/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/AboutMe.github.io/posts/jpeg_decoder/featured-image.png"
+        title="This article describes how I built a JPEG decoder" /></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-project">The project</a></li>
+    <li><a href="#how-it-works">How it works</a>
+      <ul>
+        <li><a href="#huffman-coding">Huffman coding:</a></li>
+        <li><a href="#quantification-tables">Quantification tables:</a></li>
+        <li><a href="#idct">IDCT</a></li>
+        <li><a href="#up-sampling">Up sampling</a></li>
+        <li><a href="#ycbcr-to-rgg">YCbCr to RGG</a></li>
+      </ul>
+    </li>
+    <li><a href="#what-we-built">What we built</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="the-project">The project</h2>
+<p>This project is about building from scratch a functional JPEG to PPM decoder. I teamed up with 2 other students to build the decoder using <a href="https://en.wikipedia.org/wiki/C_%28programming_language%29" target="_blank" rel="noopener noreffer">C</a>.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>JPEG format compress images using mathematical methods and algorithms that are described on the <a href="https://jpeg.org/jpeg/" target="_blank" rel="noopener noreffer">official JPEG documentation</a>.<br>
+<figure><a class="lightgallery" href="/AboutMe.github.io/posts/jpeg_decoder/codec.png" title="Illustration" data-thumbnail="/AboutMe.github.io/posts/jpeg_decoder/codec.png" data-sub-html="<h2>process of encoding and decoding</h2><p>Illustration</p>">
+        <img
+            class="lazyload"
+            src="/AboutMe.github.io/svg/loading.min.svg"
+            data-src="codec.png"
+            data-srcset="/AboutMe.github.io/posts/jpeg_decoder/codec.png, codec.png 1.5x, /AboutMe.github.io/posts/jpeg_decoder/codec.png 2x"
+            data-sizes="auto"
+            alt="/AboutMe.github.io/posts/jpeg_decoder/codec.png" />
+    </a><figcaption class="image-caption">process of encoding and decoding</figcaption>
+    </figure></p>
+<h3 id="huffman-coding">Huffman coding:</h3>
+<p>The output from Huffman&rsquo;s algorithm can be viewed as a variable-length code table for encoding a source symbol. The Huffman table is found using the frequency of each character of the input file.</p>
+<h3 id="quantification-tables">Quantification tables:</h3>
+<p>This is a special algorithm for JPEG documentation that results in tansforming frequential data to spacial data.</p>
+<h3 id="idct">IDCT</h3>
+<p>This step consist of computing the inverse of the <a href="https://en.wikipedia.org/wiki/Discrete_cosine_transform" target="_blank" rel="noopener noreffer">discrete cosine transform</a>.</p>
+<h3 id="up-sampling">Up sampling</h3>
+<p>When upsampling is performed on a sequence of samples of a signal or other continuous function, it produces an approximation of the sequence that would have been obtained by sampling the signal at a higher rate</p>
+<h3 id="ycbcr-to-rgg">YCbCr to RGG</h3>
+<p>This is a special step simply changing the way every pixel is encoded.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>What is YCbCr?<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">This is a way of encoding colors. The $Y$ value is the luma component and $C_b$ and $C_r$ are the blue and red difference chroma components. <a href="https://en.wikipedia.org/wiki/YCbCr" target="_blank" rel="noopener noreffer">Learn more</a></div>
+        </div>
+    </div>
+<h2 id="what-we-built">What we built</h2>
+<p>The decoder we created can process multiple JPEG images in baseline sequential mode (non progressive).<br>
+Because I am not the only owner of this code, I will not publish it. However, you can contact me to access the code.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-06-01</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
 
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/AboutMe.github.io/tags/c/">C</a>,&nbsp;<a href="/AboutMe.github.io/tags/algorithm/">Algorithm</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/AboutMe.github.io/">Home</a></span>
+        </section>
+    </div>
 
-  </div>
+    <div class="post-nav"><a href="/AboutMe.github.io/posts/connex_components/" class="prev" rel="prev" title="Size of Connex Components in unoriented 2D graph"><i class="fas fa-angle-left fa-fw"></i>Size of Connex Components in unoriented 2D graph</a>
+            <a href="/AboutMe.github.io/posts/challenge_data_ia/" class="next" rel="next" title="Challenge DATA &amp; AI by Ens&#39;IA and Neovision">Challenge DATA &amp; AI by Ens&#39;IA and Neovision<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Maxime NEMO Portfolio, built with <3 and Hugo</div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/AboutMe.github.io/" target="_blank">Maxime NEMO</a></span></div>
+        </div>
+    </footer></div>
 
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="https://maximene.github.io/AboutMe.github.io/tags/c/">C</a></li>
-    </ul>
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-    <span>&copy; 2021 <a href="https://maximene.github.io/AboutMe.github.io/">Maxime NEMO - Portfolio</a></span>
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/AboutMe.github.io/lib/katex/katex.min.css"><script type="text/javascript" src="/AboutMe.github.io/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/AboutMe.github.io/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/AboutMe.github.io/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/AboutMe.github.io/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/AboutMe.github.io/lib/katex/katex.min.js"></script><script type="text/javascript" src="/AboutMe.github.io/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"Maxime NEMO","id-2":"Maxime NEMO"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script type="text/javascript" src="/AboutMe.github.io/js/theme.min.js"></script></body>
 </html>
