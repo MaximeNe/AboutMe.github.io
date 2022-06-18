@@ -4,9 +4,16 @@
         <link>https://maximene.github.io/AboutMe.github.io/</link>
         <description>Maxime Nemo Portfolio</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</managingEditor>
-            <webMaster>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</webMaster><lastBuildDate>Tue, 01 Feb 2022 10:29:41 &#43;0200</lastBuildDate>
+            <webMaster>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</webMaster><lastBuildDate>Wed, 06 Apr 2022 11:05:23 &#43;0200</lastBuildDate>
             <atom:link href="https://maximene.github.io/AboutMe.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>BlowWar AI Projet</title>
+    <link>https://maximene.github.io/AboutMe.github.io/posts/blob_war/</link>
+    <pubDate>Wed, 06 Apr 2022 11:05:23 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://maximene.github.io/AboutMe.github.io/posts/blob_war/</guid>
+    <description><![CDATA[The game Blobwar is played on an 8x8 chessboard where two players (blue and red) compete. Each player has a set of pieces called blobs. The game is played turn by turn. Each turn, whenever possible, the current player chooses a blob and moves it. Any move to an adjacent square (including diagonally) sees the blob duplicated on the target square. It is also possible to jump to a distance of 2 squares, but in this case the blob moves from the starting square to the target square (so there is no duplication).]]></description>
+</item><item>
     <title>Challenge Neovision x Ens&#39;IA 2022</title>
     <link>https://maximene.github.io/AboutMe.github.io/posts/challenge2022/</link>
     <pubDate>Tue, 01 Feb 2022 10:29:41 &#43;0200</pubDate>
@@ -91,13 +98,5 @@ How it works JPEG format compress images using mathematical methods and algorith
 process of encoding and decodingIllustration
 " process of encoding and decoding 
 Huffman coding: The output from Huffman&rsquo;s algorithm can be viewed as a variable-length code table for encoding a source symbol.]]></description>
-</item><item>
-    <title>Size of Connex Components in unoriented 2D graph</title>
-    <link>https://maximene.github.io/AboutMe.github.io/posts/connex_components/</link>
-    <pubDate>Tue, 13 Apr 2021 23:02:18 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://maximene.github.io/AboutMe.github.io/posts/connex_components/</guid>
-    <description><![CDATA[The project  Considering a set of points $p_i$, $1 \le i \le n$, and a limit distance $s$, we want to know the number a connex component of the given set of points and distance.
-Two vertices $p_i$ and $p_j$ are linked by an edge if $d(p_i, p_j) \le s$. A connex component is a sub-graph where all the vertices are linked by transitivity.  A solution I worked in pair with Hugo on different methods.]]></description>
 </item></channel>
 </rss>
