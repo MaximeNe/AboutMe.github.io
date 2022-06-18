@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Maxime Nemo Portfolio</title>
+        <title>Maxime Nemo Website</title>
         <link>https://maximene.github.io/AboutMe.github.io/</link>
-        <description>Maxime Nemo Portfolio</description>
+        <description>Maxime Nemo website. Studying computer science at Ensimag in Grenoble</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</managingEditor>
             <webMaster>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</webMaster><lastBuildDate>Wed, 06 Apr 2022 11:05:23 &#43;0200</lastBuildDate>
             <atom:link href="https://maximene.github.io/AboutMe.github.io/index.xml" rel="self" type="application/rss+xml" />

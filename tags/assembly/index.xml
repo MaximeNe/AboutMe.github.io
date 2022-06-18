@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Assembly - Tag - Maxime Nemo Portfolio</title>
+        <title>Assembly - Tag - Maxime Nemo Website</title>
         <link>https://maximene.github.io/AboutMe.github.io/tags/assembly/</link>
-        <description>Assembly - Tag - Maxime Nemo Portfolio</description>
+        <description>Assembly - Tag - Maxime Nemo Website</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</managingEditor>
             <webMaster>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</webMaster><lastBuildDate>Mon, 31 Jan 2022 21:01:41 &#43;0200</lastBuildDate><atom:link href="https://maximene.github.io/AboutMe.github.io/tags/assembly/" rel="self" type="application/rss+xml" /><item>
     <title>Ensimag&#39;s software engineering project</title>
