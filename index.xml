@@ -4,9 +4,18 @@
         <link>https://maximene.github.io/AboutMe.github.io/</link>
         <description>Maxime Nemo website. Studying computer science at Ensimag in Grenoble</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</managingEditor>
-            <webMaster>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</webMaster><lastBuildDate>Wed, 06 Apr 2022 11:05:23 &#43;0200</lastBuildDate>
+            <webMaster>Maxime.Nemo@grenoble-inp.org (Maxime NEMO)</webMaster><lastBuildDate>Tue, 12 Apr 2022 11:05:23 &#43;0200</lastBuildDate>
             <atom:link href="https://maximene.github.io/AboutMe.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Ens&#39;IA : Reinforcement Learning course</title>
+    <link>https://maximene.github.io/AboutMe.github.io/posts/ensia_rl/</link>
+    <pubDate>Tue, 12 Apr 2022 11:05:23 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://maximene.github.io/AboutMe.github.io/posts/ensia_rl/</guid>
+    <description><![CDATA[Introduction As a member of Ens&rsquo;IA, I give lectures and lab works about artificial intelligence.
+In 2021/2022, @Hugo Cartigny and I gave lectures and lab works about
+ Machine Learning with KNN and K-Means Deep learning in computer vision (perceptron, sigmoid neuron, neural networks, convolutional neural nerworks &hellip;) Data processing for computer vision  As you can see, we did not talk about Reinforcement Learning yet, so I dicided to build a course about it, especially about Q-Learning]]></description>
+</item><item>
     <title>BlowWar AI Projet</title>
     <link>https://maximene.github.io/AboutMe.github.io/posts/blob_war/</link>
     <pubDate>Wed, 06 Apr 2022 11:05:23 &#43;0200</pubDate>
@@ -87,16 +96,5 @@ To use the program, just run the file main.py. Then to move an object, you have 
     <description><![CDATA[The challenge: This challenge was organized by Ens&rsquo;IA and Neovision in 2021. It lasted a month and a half and was about the well known subject of Optical Character Recognition (OCR).
 What is OCR ?  It&rsquo;s about converting images of typed, handwritten or printed text into machine-encoded text. Learn more   ➡️ The goal was quite simple but still very challenging:
 building the best model to recognize the characters in the dataset given by Neovision.]]></description>
-</item><item>
-    <title>Jpeg decoder to PPM</title>
-    <link>https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/</link>
-    <pubDate>Tue, 01 Jun 2021 10:29:41 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://maximene.github.io/AboutMe.github.io/posts/jpeg_decoder/</guid>
-    <description><![CDATA[The project This project is about building from scratch a functional JPEG to PPM decoder. I teamed up with 2 other students to build the decoder using C.
-How it works JPEG format compress images using mathematical methods and algorithms that are described on the official JPEG documentation.
-process of encoding and decodingIllustration
-" process of encoding and decoding 
-Huffman coding: The output from Huffman&rsquo;s algorithm can be viewed as a variable-length code table for encoding a source symbol.]]></description>
 </item></channel>
 </rss>
